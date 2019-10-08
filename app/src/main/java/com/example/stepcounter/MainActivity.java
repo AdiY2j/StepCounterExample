@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         ButterKnife.bind(this);
 
-        setupCounterSensor();
+        setupCounterService();
     }
 
-    private void setupCounterSensor() {
+    private void setupCounterService() {
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
         if(sensor != null){
@@ -61,10 +61,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
 
     @OnClick(R.id.btnStart)
     public void startCounter(){

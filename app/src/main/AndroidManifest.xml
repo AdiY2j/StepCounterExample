@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.hardware.sensor.stepcounter"/>
     <uses-permission android:name="android.hardware.sensor.stepdetector"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
 
     <application
         android:allowBackup="true"
